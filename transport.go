@@ -1,14 +1,13 @@
 package trpc
 
 import (
-	"io"
 	"log"
 	"net"
 	"sync"
 )
 
 type (
-	Conn io.ReadWriteCloser
+	Conn net.Conn
 
 	Handler func(conn Conn)
 
